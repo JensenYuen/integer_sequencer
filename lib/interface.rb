@@ -16,13 +16,13 @@ while running
   user_input = gets.chomp
   number_sequencer = SequencerController.new(user_input)
   answer = number_sequencer.sequencer
-  unless answer.nil?
+  if answer.nil?
+    puts 'Your input sequence is incorrect'
+  else
     print 'sequenced number :'
     answer.each do |number|
       print " #{number} "
     end
-  else
-    puts 'Your input sequence is incorrect'
   end
   running = false
 end
