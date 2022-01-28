@@ -2,7 +2,7 @@
 
 require_relative './controller/sequencer_controller'
 
-number_sequencer = SequencerController.new
+
 running = true
 
 while running
@@ -10,7 +10,8 @@ while running
   puts 'eg: 5 6 3 9 -1,2 '
   print "\nYour sequence :"
   user_input = gets.chomp
-  answer = number_sequencer.sequencer(user_input)
+  number_sequencer = SequencerController.new(user_input)
+  answer = number_sequencer.sequencer
   puts 'sequenced number '
   puts answer
   running = false
