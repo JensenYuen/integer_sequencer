@@ -10,7 +10,7 @@ You may assume the following:
 -	The input will contain between 1 to 20 integers (inclusive)
 -	Each integer will be between -200 and 200, inclusive.
 -	n will be between 0 and K-1, inclusive, where K is the number of elements in the input
--
+
 Using your favourite programming language, implement a working program that
 -	Reads as input a single line from stdin, containing the list of integers separated by space, then a comma, and the order n.
 For example, the line for the above list and order 2 would be:
