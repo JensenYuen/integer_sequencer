@@ -1,7 +1,6 @@
 # frozen_string_literal: false
 
 require_relative './controller/sequencer_controller'
-require 'pry-byebug'
 
 running = true
 
