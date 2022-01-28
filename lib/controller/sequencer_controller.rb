@@ -1,7 +1,5 @@
 # frozen_string_literal: false
 
-require 'pry-byebug'
-
 # logic of the sequencer is stored here
 class SequencerController
 
