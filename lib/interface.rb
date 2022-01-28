@@ -2,7 +2,6 @@
 
 require_relative './controller/sequencer_controller'
 
-
 running = true
 
 while running
@@ -12,7 +11,9 @@ while running
   user_input = gets.chomp
   number_sequencer = SequencerController.new(user_input)
   answer = number_sequencer.sequencer
-  puts 'sequenced number '
-  puts answer
+  print 'sequenced number :'
+  answer.each do |number|
+    print " #{number} "
+  end
   running = false
 end

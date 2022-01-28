@@ -39,12 +39,13 @@ class SequencerController
   end
 
   def valid_order?(user_input_order)
-    return false if user_input_order.nil?
-
-    return false if user_input_order.zero?
-
-    return false if user_input_order > @sequence.size
+    return false if user_input_order.nil? || user_input_order.zero?
 
     true
   end
+
+  # Extra methods below to check for
+  # if the input contains between 1 to 20 integers (inclusive)
+  # if the integer are between -200 and 200, inclusive.
+  # if n is between 0 and K-1, inclusive, where K is the number of elements in the input
 end
