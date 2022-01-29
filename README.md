@@ -17,3 +17,22 @@ For example, the line for the above list and order 2 would be:
 5 6 3 9 -1,2
 -	Calculates the sequence of order n for the given input; and
 -	Prints the result to stdout, as a sequence of integers separated by spaces
+
+### Built With
+
+* [Ruby](https://www.ruby-lang.org/en/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   gh repo clone JensenYuen/integer_sequencer
+   ```
+2. To run the application
+   ```sh
+   ruby lib/interface.rb
+   ```
